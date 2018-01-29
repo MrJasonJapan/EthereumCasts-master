@@ -1,6 +1,9 @@
 //do this first. this will allow node.js to to see python 2.7 (as far as I can tell)
 //this step was necessary for me to get things working on Windows 10.
-npm install --global --production windows-build-tools
+npm install --global --production windows-build-tools 
 
 // then install mocha, ganache, and web3, the specific version of web3 being necessary to follow along the Udemy course.
 npm install --save mocha ganache-cli web3@1.0.0-beta.26
+
+// a provider necessary for communicating with our Infura account, and it also allow to use our Metamask Ethereum account (vie our Mnemonic)
+npm install --save truffle-hdwallet-provider

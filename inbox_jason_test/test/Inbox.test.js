@@ -10,7 +10,7 @@ const provider = ganache.provider();
 const web3 = new Web3(provider);
 //'interface': the JavaScript ABI, 'bytecode': the raw compiled contract
 // requiring compile.js here actually runs it, resulting in a compiled object, of which we had off the interface and bytecode properties.
-const {interface, bytecode} = require('../compile.js');
+const {interface, bytecode} = require('../compile');
 
 let accounts;
 let inbox;
